@@ -63,11 +63,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Je opdracht:** Link naar de website: https://www.humansofnewyork.com/
 
 **Screenshot(s):**
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/Screenshot_humansofNY.png)
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken] 
-**Breakdown-schets(en):**
+**Breakdown-schets(en):** 
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdownschets.jpg)
 
-(images/breakdownschets_humansofny.png)
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/Screenshot_humansofNY.png)
+
 
