@@ -1,5 +1,40 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
+header {
+  background-color: black;
+  height: 50vh; 
+
+}
+
+header a {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+li {
+    margin-right: 2em;
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+body {
+    /* border: 10px solid white; */
+    margin: 1.5em;
+}
+
+img {
+     width: 80%;
+}

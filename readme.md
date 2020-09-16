@@ -40,9 +40,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+De header klopt voor een groot deel voor een desktop scherm.
+
+Voor een mobiele scherm is er op de echte website een hamburger menu.
+
+Dit vind ik lastig om te maken.
+
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s)](images/SCREEN_MOBIEL1.png)
+
+![screenshot(s)](images/SCREEN_MOBIEL2.png)
+
+
 
 ### Agenda voor meeting
 
