@@ -1,14 +1,22 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
 header {
-  background-color: black;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background:
+    /* transparent black https://www.eggradients.com/category/black-gradient */ 
+  linear-gradient(147deg, #000000 0%, #434343 74%
+    ),  url(../images/old_couple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: saturation;
+  background-position: bottom;
   height: 50vh; 
-
+  text-align: center;
+  letter-spacing: 0.16em;
 }
 
 header a {
@@ -18,7 +26,7 @@ header a {
 header nav ul {
     display: flex;
     justify-content: flex-end;
-    
+    border-bottom: 1.2px solid white;
 }
 
 li {
@@ -27,14 +35,82 @@ li {
 }
 
 a:hover{
-    color: red;
+    color: goldenrod;
+    transition: .3s ease-in;
 }
 
 body {
     /* border: 10px solid white; */
     margin: 1.5em;
+} 
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 3fr) ); 
+    grid-gap: 1em;
+    grid-auto-flow:dense;
+}
+
+/* Toggle transparent background https://www.eggradients.com/gradient/bad-memory
+article:nth-child(1) {
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%); 
+} */ 
+
+article p {
+    text-indent: 1em;
+    line-height:1.5em;
+}
+
+p::first-line {
+    font-weight:bold;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-column-start:1;
+    grid-column-end:-1;
+    text-shadow:
+    0 0 0.005em goldenrod,
+    0 0 0.05em goldenrod,
+    0 0 0.1em goldenrod;
+}
+
+h3 {
+    color: goldenrod;
+    text-shadow:.1em .1em 0 rgba(0,0,0,.75);
+    transform: skewY(-4.9deg);
 }
 
 img {
-     width: 80%;
+     width: 100%;
+}
+
+footer {
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    background-color: black;
+    height: 20vh; 
+    color: white;
+}
+
+.mediafooter {
+    display: flex;
+    grid-gap: 2em;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 4em;
+    width: 4em;
+}
+
+/* bron: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+
+.mediafooter:hover{
+    transition: .2s ease-in;
+    transform: scale(0.8);
 }
