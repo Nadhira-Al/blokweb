@@ -32,7 +32,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
-Website is responsive. Alleen de footer kan nog beter met een media querie aangepast worden.
+Goed: Website is responsive
+Wat ging minder goed: De footer met social media icoontjes - dit kan aangepast worden met een  media querie
+
+![screenshot(s)](images/DESKTOP_SCREEN1.png)
+
+![screenshot(s)](images/DESKTOP_SCREEN2.png)
+
+![screenshot(s)](images/SCREEN_MOBIEL3.png)
 
 
 ## Voortgang 1 (week 3)
