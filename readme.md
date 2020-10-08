@@ -26,6 +26,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -same as voortgang 1-
 
+-dit ging goed & dit was lastig-
+
+Goed: Animatie op de button kunnen maken. Wanneer je eroverheen hovert verandert hij van kleur en wanneer je erop klikt komt het boek van Humans of New York boek tevoorschijn. Dit heb ik met een aantal regels Javascript gerealiseerd. 
+
+Wat ging minder goed: Tweede pagina nog niet aangemaakt
+
+![screenshot(s)](images/DESKTOP_SCREEN3.png)
+
+![screenshot(s)](images/DESKTOP_SCREEN4.png)
 
 
 ## Voortgang 2 (week 5)
@@ -33,6 +42,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 
 Goed: Website is responsive
+
 Wat ging minder goed: De footer met social media icoontjes - dit kan aangepast worden met een  media querie
 
 ![screenshot(s)](images/DESKTOP_SCREEN1.png)

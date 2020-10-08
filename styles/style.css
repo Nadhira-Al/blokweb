@@ -89,6 +89,48 @@ img {
      width: 100%;
 }
 
+button {
+  padding:1em;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  font-size:1.1em;
+  font-weight:700;
+    /* Toggle transparent background bron https://www.eggradients.com/gradient/bad-memory */ 
+  background-image:linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%); 
+  background-size:200% 200%;
+  border:none;
+  border-radius:.5em;
+  cursor:pointer;
+  animation-name:color-animation;
+  animation-duration:1.5s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  animation-play-state:paused;
+}
+
+
+button:hover {
+   font-size:1.5em;
+   border-radius:2em;
+   transition: .3s ease-in;
+    /* animatie speelt pas bij een hover over de button*/
+   animation-play-state:running;
+}
+
+@keyframes color-animation {
+  0% {
+    background-position:right bottom;
+  }
+  100% {
+    background-position:left top;
+  }
+}
+
+.hide {
+    width: 10rem;
+    opacity: 0;
+}
+
 footer {
     text-transform:uppercase;
     display: flex;
