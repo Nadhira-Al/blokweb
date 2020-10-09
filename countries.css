@@ -46,10 +46,6 @@ body {
 
 main {
     font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 3fr) ); 
-    grid-gap: 1em;
-    grid-auto-flow:dense;
 }
 
 article p {
@@ -150,3 +146,34 @@ footer {
     transition: .2s ease-in;
     transform: scale(0.8);
 }
+
+/*--- Media querie Mobiel ---*/
+@media (min-width: 25em) {        
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr; /*--- 1 colum ---*/
+    grid-gap: 1em;
+}
+  }
+
+/*--- Media querie Ipad ---*/
+@media (min-width: 40em) {        
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*--- 2 columns ---*/
+    grid-gap: 1em;
+}
+  }
+
+/*--- Media querie Desktop ---*/
+@media (min-width: 70em) {        
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*--- 3 columns ---*/
+    grid-gap: 1em;
+}
+  }
+
