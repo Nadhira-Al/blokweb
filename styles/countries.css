@@ -26,6 +26,7 @@ header a {
 header nav ul {
     display: flex;
     justify-content: flex-end;
+    font-size: 1em;
     border-bottom: 1.2px solid white;
 }
 
@@ -57,7 +58,7 @@ p::first-line {
     font-weight:bold;
 }
 
-h1, h2 {
+h1:first-of-type, h2 {
     display: flex;
     justify-content: center;
     display: grid;
@@ -122,13 +123,18 @@ button:hover {
 }
 
 footer {
-    text-transform:uppercase;
-    display: flex;
-    justify-content: center;
     display: grid;
+     display: flex;
+     justify-content: center;
     background-color: black;
     height: 20vh; 
     color: white;
+}
+
+h1:last-of-type {
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 .mediafooter {
@@ -148,18 +154,43 @@ footer {
 }
 
 /*--- Media querie Mobiel ---*/
-@media (min-width: 25em) {        
-main {
+@media (min-width: 0em), (max-width: 39em) {        
+ header nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    border-bottom: 1.2px solid white;
+}
+
+    
+    main {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 1fr; /*--- 1 colum ---*/
     grid-gap: 1em;
 }
+    
+    h1:first-of-type {
+        font-size: 1.4em;
+    }
   }
+
 
 /*--- Media querie Ipad ---*/
 @media (min-width: 40em) {        
-main {
+ header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    border-bottom: 1.2px solid white;
+}
+
+    
+    h1:first-of-type{
+        font-size: 2.5em;
+    }
+    
+    main {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr; /*--- 2 columns ---*/
@@ -169,7 +200,11 @@ main {
 
 /*--- Media querie Desktop ---*/
 @media (min-width: 70em) {        
-main {
+    h1:first-of-type {
+        font-size: 4em;
+    }
+    
+    main {
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /*--- 3 columns ---*/
