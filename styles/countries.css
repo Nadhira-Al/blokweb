@@ -1,31 +1,29 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-  text-decoration: none;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 header {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background:
-    /* transparent black https://www.eggradients.com/category/black-gradient */ 
-  linear-gradient(147deg, #000000 0%, #434343 74%
-    ),  url(../images/old_couple.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: saturation;
-  background-position: bottom;
-  height: 50vh; 
-  text-align: center;
-  letter-spacing: 0.16em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: black;
+    background-position: bottom;
+    height: 50vh;
+    text-align: center;
+    letter-spacing: 0.16em;
 }
 
 header a {
     color: white;
+    text-shadow: 1.8px 1.8px #000000;
 }
 
 header nav ul {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     font-size: 1em;
     border-bottom: 1.2px solid white;
 }
@@ -35,106 +33,120 @@ li {
     color: white;
 }
 
-a:hover{
+a:hover {
     color: goldenrod;
     transition: .3s ease-in;
 }
 
 body {
-    /* border: 10px solid white; */
-    margin: 1.5em;
-} 
+    border: 10px solid white; 
+}
 
 main {
-    font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
 
-article p {
-    text-indent: 1em;
-    line-height:1.5em;
-}
-
-p::first-line {
-    font-weight:bold;
-}
-
-h1:first-of-type, h2 {
+h1 {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-column-start:1;
-    grid-column-end:-1;
+    grid-column-start: 1;
+    grid-column-end: -1;
     text-shadow:
-    0 0 0.005em goldenrod,
-    0 0 0.05em goldenrod,
-    0 0 0.1em goldenrod;
+        0 0 0.005em white,
+        0 0 0.05em white,
+        0 0 0.1em white;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
+    margin-top: 2em;
+    margin-left: 0.5em;
 }
 
 h3 {
-    color: goldenrod;
-    text-shadow:.1em .1em 0 rgba(0,0,0,.75);
-    transform: skewY(-4.9deg);
-}
-
-img {
-     width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 button {
-  padding:1em;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
-  font-size:1.1em;
-  font-weight:700;
-    /* Toggle transparent background bron https://www.eggradients.com/gradient/bad-memory */ 
-  background-image:linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%); 
-  background-size:200% 200%;
-  border:none;
-  border-radius:.5em;
-  cursor:pointer;
-  animation-name:color-animation;
-  animation-duration:1.5s;
-  animation-timing-function:linear;
-  animation-iteration-count: infinite;
-  animation-play-state:paused;
+    margin-left: 10em;
+    background: none;
+    border-style: solid;
+    border-color: white;
+    text-shadow: 1px 1px #000000;
+    color: white;
+    padding: 1em;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 
 button:hover {
-   font-size:1.5em;
-   border-radius:2em;
-   transition: .3s ease-in;
-    /* animatie speelt pas bij een hover over de button*/
-   animation-play-state:running;
-}
-
-@keyframes color-animation {
-  0% {
-    background-position:right bottom;
-  }
-  100% {
-    background-position:left top;
-  }
-}
-
-.hide {
-    width: 10rem;
-    opacity: 0;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    transition: .3s ease-in;
 }
 
 footer {
-    display: grid;
-     display: flex;
-     justify-content: center;
-    background-color: black;
-    height: 20vh; 
-    color: white;
-}
-
-h1:last-of-type {
-    text-transform:uppercase;
     display: flex;
     justify-content: center;
+    background-color: black;
+    height: 20vh;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner1 {
+    position: relative;
+    background: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: 45em;
+}
+
+.banner2 {
+    position: relative;
+    background: url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: 45em;
+}
+
+.banner3 {
+    position: relative;
+    background: url(../images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: 45em;
+}
+
+.banner4 {
+    position: relative;
+    background: url(../images/banner4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    height: 45em;
 }
 
 .mediafooter {
@@ -148,67 +160,118 @@ h1:last-of-type {
 
 /* bron: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 
-.mediafooter:hover{
+.mediafooter:hover {
     transition: .2s ease-in;
     transform: scale(0.8);
 }
 
-/*--- Media querie Mobiel ---*/
-@media (min-width: 0em), (max-width: 39em) {        
- header nav ul {
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-    border-bottom: 1.2px solid white;
-}
-
-    
-    main {
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr; /*--- 1 colum ---*/
-    grid-gap: 1em;
-}
-    
-    h1:first-of-type {
-        font-size: 1.4em;
-    }
-  }
-
-
-/*--- Media querie Ipad ---*/
-@media (min-width: 40em) {        
- header nav ul {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1em;
-    border-bottom: 1.2px solid white;
-}
-
-    
-    h1:first-of-type{
+/*--- Media querie Mobiel - Schermen onder de 767px ---*/
+@media (max-width: 767px) {
+    header nav ul {
+        display: block;
+        flex-direction: column;
+        list-style-type: none;
         font-size: 2.5em;
     }
-    
-    main {
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*--- 2 columns ---*/
-    grid-gap: 1em;
-}
-  }
 
-/*--- Media querie Desktop ---*/
-@media (min-width: 70em) {        
-    h1:first-of-type {
+    main {
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        /*--- 1 colum ---*/
+        grid-gap: 1em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .mediafooter {
+        display: flex;
+        grid-gap: 2em;
+        justify-content: space-around;
+        list-style-type: none;
+        height: 2em;
+        width: 2em;
+    }
+
+    button {
+        color: aqua;
+    }
+
+    .banner1,
+    .banner2,
+    .banner3,
+    .banner4 { 
+        opacity: 0.6; /*--- Maakt de sections donkerder ---*/
+    }
+}
+
+
+/*--- Media querie Ipad - Schermen boven de 768px ---*/
+@media (min-width: 768px) {
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1em;
+        border-bottom: 1.2px solid white;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*--- 2 columns ---*/
+        grid-gap: 1em;
+    }
+
+    button {
+        color: yellow;
+    }
+
+    .banner1,
+    .banner2,
+    .banner3,
+    .banner4 {
+        opacity: 0.8; /*--- Maakt de sections iets donkerder ---*/
+    }
+}
+
+/*--- Media querie Desktop - Schermen boven de 1000px ---*/
+@media (min-width: 1000px) {
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1em;
+        border-bottom: 1.2px solid white;
+    }
+
+    h1 {
         font-size: 4em;
     }
-    
-    main {
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*--- 3 columns ---*/
-    grid-gap: 1em;
-}
-  }
 
+
+    main {
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*--- 3 columns ---*/
+        grid-gap: 1em;
+    }
+
+    button {
+        color: white;
+    }
+
+    .banner1,
+    .banner2,
+    .banner3,
+    .banner4 {
+        opacity: 1; /*--- Normale helderheid ---*/
+    }
+}

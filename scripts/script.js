@@ -12,4 +12,6 @@ function appear(){
 }
 
 button.addEventListener("click", appear);
-         
+
+var audio = new Audio('audio/goodvibes.mp3');
+audio.play();

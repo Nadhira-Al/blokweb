@@ -6,9 +6,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+De mooie lessen van front-end development
 
 
 
@@ -16,10 +14,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
-**Screenshot(s):**
+Goed: Header verandert op mobile screen
 
--screenshot(s) van je eindresultaat-
+Wat ging minder goed: Tweede pagina nog niet aangemaakt
 
+![screenshot(s)](images/SCREEN_MOBIEL4.png)
 
 
 ## Voortgang 3 (week 6)
