@@ -42,7 +42,7 @@ Wat ging minder goed: Tweede pagina nog niet aangemaakt
 
 Goed: Website is responsive
 
-Wat ging minder goed: De footer met social media icoontjes - dit kan aangepast worden met een  media querie
+Wat ging minder goed: De footer met social media icoontjes 
 
 ![screenshot(s)](images/DESKTOP_SCREEN1.png)
 
