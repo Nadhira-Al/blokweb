@@ -6,8 +6,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-De mooie lessen van front-end development
-
+De mooie lessen van front-end development 
 
 
 ## Eindgesprek (week 7/8)
@@ -68,17 +67,6 @@ Dit vind ik lastig om te maken.
 ![screenshot(s)](images/SCREEN_MOBIEL1.png)
 
 ![screenshot(s)](images/SCREEN_MOBIEL2.png)
-
-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
 
 
 ## Intake (week 1)
